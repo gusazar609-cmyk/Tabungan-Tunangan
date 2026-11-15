@@ -7,6 +7,8 @@
 <title>Tabungan Tunangan</title>
 <link rel="stylesheet" href="style.css">
 </head>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
 <body>
 <div id="app"></div>
 <nav id="nav" hidden>
@@ -23,5 +25,6 @@
 <script src="extra.js"></script>
 <script src="extra2.js"></script>
 <script src="extra3.js"></script>
+<script>if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');</script>
 </body>
 </html>
