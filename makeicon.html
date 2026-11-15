@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Buat Ikon</title></head>
+<body style="font-family:sans-serif;text-align:center;padding:20px">
+<h3>Pembuat Ikon PNG</h3>
+<p id="msg">Memuat...</p>
+<canvas id="c" width="512" height="512" style="width:200px;height:200px;border:1px solid #ccc"></canvas>
+<p><a id="dl" download="icon-512.png" style="display:inline-block;padding:14px 22px;background:#C9A24B;color:#fff;border-radius:12px;text-decoration:none;font-weight:bold">Unduh icon-512.png</a></p>
+<script>
+const c=document.getElementById('c'),x=c.getContext('2d');
+x.fillStyle='#F8C8DC';x.fillRect(0,0,512,512);
+x.strokeStyle='#C9A24B';x.lineWidth=28;
+x.beginPath();x.arc(256,300,110,0,Math.PI*2);x.stroke();
+x.fillStyle='#FFFFFF';x.lineWidth=10;x.lineJoin='round';
+x.beginPath();x.moveTo(256,110);x.lineTo(306,170);x.lineTo(256,215);x.lineTo(206,170);x.closePath();x.fill();x.stroke();
+document.getElementById('dl').href=c.toDataURL('image/png');
+document.getElementById('msg').textContent='Siap. Ketuk tombol di bawah.';
+</script></body></html>
