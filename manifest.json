@@ -1,0 +1,16 @@
+{
+  "name": "Tabungan Tunangan",
+  "short_name": "Tabungan",
+  "description": "Satu Tujuan, Satu Tabungan, Menuju Hari Bahagia.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FFF8EE",
+  "theme_color": "#F8C8DC",
+  "lang": "id",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}
